@@ -1,0 +1,43 @@
+package collection1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class Demo1 {
+	
+	
+	public static void main(String[] args) {
+		
+		ArrayList al = new ArrayList();
+		
+	
+		
+		
+		
+		al.add(5);
+		al.add("xyz");
+		al.add('A');
+		al.add(null);
+		al.add("xyz");
+	
+
+		Iterator itr1 = al.iterator();
+				
+				
+	
+		  ListIterator itr = al.listIterator(al.size());
+		
+		while(itr.hasPrevious()) {  
+			
+			System.out.println(itr.previous());
+		}
+		
+		
+	
+		
+		
+	
+	}
+
+}
